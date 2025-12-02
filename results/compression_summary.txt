@@ -1,0 +1,17 @@
+======================================================================
+HAR MODEL COMPRESSION SUMMARY
+======================================================================
+
+Configuration:
+  Pruning: Enabled (amount: 30%)
+  Quantization: Enabled (8-bit)
+  Total parameters: 11,686
+  FP32 baseline size: 48.68 KB
+  FP32 baseline accuracy: 0.8205
+
+Results (vs FP32 baseline):
+----------------------------------------------------------------------
+Model                     Accuracy     %            Size (KB)    %           
+----------------------------------------------------------------------
+FP32 Baseline             0.8205       100.0       % 48.68        100.0       %
+Pruned+Quantized          0.8276       100.9       % 14.74        30.3        %
