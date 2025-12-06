@@ -115,6 +115,8 @@ accelerometer-motion-detection/
 
 ## Wyniki
 
+**Model bazowy FP32:** Rozmiar = 48.7 KB, Dokładność = 0.8205
+
 | Technika                | Rozmiar względem FP32 | Dokładność względem FP32 | Kluczowa obserwacja                    |
 |-------------------------|----------------------|-------------------------|----------------------------------------|
 | FP32 Baseline           | 1.00x               | 1.000x                  | Model referencyjny                     |
