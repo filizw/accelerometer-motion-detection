@@ -115,9 +115,9 @@ accelerometer-motion-detection/
 
 ## Wyniki
 
-| Technika                | Rozmiar (% FP32) | Dokładność (% FP32) | Komentarz                                       |
-|-------------------------|------------------|---------------------|-------------------------------------------------|
-| FP32 Baseline           | 100%             | 100%                | Model referencyjny                              |
-| Pruning 30%             | 75.2%            | 100.9%              | Wysoka skuteczność kompresji z poprawą dokładności |
-| Kwantyzacja INT8        | 23%              | 99.5%               | ~4.3x mniejszy, minimalna utrata dokładności   |
-| Pruning 30% + INT8      | 30.3%            | 100.9%              | Doskonały kompromis: 3.3x mniejszy bez utraty dokładności |                        |
+| Technika                | Rozmiar względem FP32 | Dokładność względem FP32 | Kluczowa obserwacja                    |
+|-------------------------|----------------------|-------------------------|----------------------------------------|
+| FP32 Baseline           | 1.00x               | 1.000x                  | Model referencyjny                     |
+| Pruning 30%             | 0.752x (75.2%)      | 1.009x (100.9%)         | Mniejszy i dokładniejszy               |
+| Kwantyzacja INT8        | 0.230x (23%)        | 0.995x (99.5%)          | 4.3× kompresja, minimalna utrata       |
+| Pruning 30% + INT8      | 0.303x (30.3%)      | 1.009x (100.9%)         | Optymalny kompromis: 3.3× bez strat    |                     |
